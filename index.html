@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Конкурсная визитка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        :root {
+            --start-bg: #474747;
+            --end-bg:   #56de47;
+            --light:    #F8F9FA;
+            --white:    #FFFFFF;
+            --text:     #212121;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+    /* … прежние стили … */
+            background-image:
+                /* 12 случайных кусков кода */
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.15'%3E%3Ctext x='0' y='15' font-family='monospace' font-size='11' fill='%23474747'%3Econsole.log('hi')%3C/text%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.18'%3E%3Ctext x='0' y='15' font-family='monospace' font-size='13' fill='%23474747'%3Eif(err) throw%3C/text%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.16'%3E%3Ctext x='0' y='15' font-family='monospace' font-size='10' fill='%23474747'%3Efunction sum(a,b)%3C/text%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.19'%3E%3Ctext x='0' y='15' font-family='monospace' font-size='12' fill='%23474747'%3Ereturn a+b%3C/text%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.17'%3E%3Ctext x='0' y='15' font-family='monospace' font-size='14' fill='%23474747'%3Econst data = []%3C/text%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.16'%3E%3Ctext x='0' y='15' font-family='monospace' font-size='11' fill='%23474747'%3Eawait fetch(url)%3C/text%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.20'%3E%3Ctext x='0' y='15' font-family='monospace' font-size='12' fill='%23474747'%3Eimport React%3C/text%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.20'%3E%3Ctext x='0' y='15' font-family='monospace' font-size='10' fill='%23474747'%3E&lt;/&gt; render()%3C/text%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.20'%3E%3Ctext x='0' y='15' font-family='monospace' font-size='13' fill='%23474747'%3Egit commit -m%3C/text%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.20'%3E%3Ctext x='0' y='15' font-family='monospace' font-size='11' fill='%23474747'%3Enpm install%3C/text%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.20'%3E%3Ctext x='0' y='15' font-family='monospace' font-size='12' fill='%23474747'%3Eexport default%3C/text%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.20'%3E%3Ctext x='0' y='15' font-family='monospace' font-size='14' fill='%23474747'%3E&lt;html&gt;&lt;/html&gt;%3C/text%3E%3C/svg%3E"),
+
+                /* 8 блоков 01 */
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.20'%3E%3Ctext x='0' y='20' font-family='monospace' font-size='15' fill='%23474747'%3E01 10 11 00%3C/text%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.20'%3E%3Ctext x='0' y='20' font-family='monospace' font-size='18' fill='%23474747'%3E1101 0010%3C/text%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.20'%3E%3Ctext x='0' y='20' font-family='monospace' font-size='16' fill='%23474747'%3E1010 0101%3C/text%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.20'%3E%3Ctext x='0' y='20' font-family='monospace' font-size='20' fill='%23474747'%3E1111 0000%3C/text%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.20'%3E%3Ctext x='0' y='20' font-family='monospace' font-size='14' fill='%23474747'%3E0110 1001%3C/text%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.15'%3E%3Ctext x='0' y='20' font-family='monospace' font-size='17' fill='%23474747'%3E1001 0110%3C/text%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.16'%3E%3Ctext x='0' y='20' font-family='monospace' font-size='19' fill='%23474747'%3E0011 1100%3C/text%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' opacity='.2'%3E%3Ctext x='0' y='20' font-family='monospace' font-size='13' fill='%23474747'%3E0101 1010%3C/text%3E%3C/svg%3E");
+
+    background-size:
+        180px 30px, 200px 30px, 160px 30px, 140px 30px, 170px 30px,
+        190px 30px, 150px 30px, 180px 30px, 160px 30px, 170px 30px,
+        180px 30px, 200px 30px,
+        130px 40px, 120px 40px, 140px 40px, 110px 40px,
+        135px 40px, 125px 40px, 145px 40px, 130px 40px;
+    background-position:
+        2% 8%, 95% 15%, 50% 20%, 70% 5%, 15% 25%,
+        85% 30%, 30% 35%, 60% 40%, 10% 45%, 90% 50%,
+        25% 55%, 75% 60%,
+        20% 70%, 80% 75%, 40% 80%, 65% 85%,
+        5% 90%, 95% 95%, 55% 98%, 35% 88%;
+    background-repeat: no-repeat;
+}
+        }
+
+        header {
+            background: var(--white);
+            padding: 25px 0;
+            text-align: center;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px 20px;
+        }
+        .photo-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid var(--end-bg);
+            box-shadow: 0 4px 15px rgba(0,0,0,.15);
+        }
+        .hero h1 {
+            margin-top: 15px;
+            font-size: 2rem;
+            color: var(--end-bg);
+            letter-spacing: 1px;
+        }
+        .hero p {
+            color: var(--text);
+            margin-top: 5px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px 20px 60px;
+        }
+
+        /* ---------- БЛОК с эффектом «правильного круга» ---------- */
+        .block {
+            position: relative;
+            overflow: hidden;
+            background: var(--start-bg);
+            color: var(--white);
+            padding: 40px 30px;
+            margin-bottom: 60px;
+            border-radius: 8px;
+            cursor: pointer;
+            transform: scale(1);
+            transition: transform .4s ease;
+            opacity: 0;
+            transform: translateY(40px) scale(1);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+        .block.show {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        .block:hover {
+            transform: scale(1.02);
+        }
+        .block::before {
+            content: '';
+            position: absolute;
+            left: var(--x, 50%);
+            top: var(--y, 50%);
+            width: var(--d, 0);
+            height: var(--d, 0);
+            background: var(--end-bg);
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: transform .5s ease;
+        }
+        .block:hover::before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .block > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+            max-width: 500px;
+            margin-top: 20px;
+        }
+        input, textarea {
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        button {
+            padding: 12px 20px;
+            background: var(--white);
+            color: var(--end-bg);
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background .3s;
+        }
+        button:hover {
+            background: #e6e6e6;
+        }
+        .msg-sent {
+            margin-top: 15px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<header></header>
+
+<section class="hero">
+    <img src="C:\Users\user\Desktop\Моя фотография.jpg" alt="Моё фото" class="photo-circle">
+    <h1>Паршуков Максим</h1>
+    <p>Код - это тихий труд, экономящий чужое время.</p>
+</section>
+
+<div class="container">
+    <section class="block">
+        <h2>Моя мотивация участвовать в конкурсе</h2>
+        <p>
+            С ранних лет меня интересовала математика. Эта наука способна развить одну из самых важных человеческих способностей - логику. Грамотно обдумав задачу можно сэкономить большое количестов времени и сил. Именно благодаря этой философии я и начал изучать программирование. Программирование - это инструмент, способный дать человечеству удобство в решении повседневных задач и сэкономить драгоценное время. Я хочу попасть в топ-IT, чтобы получить неоценимый опыт разработки приложений, которые сделают жизнь юзера проще. В будущем я вижу себя бэкэнд разработчиком, т.к. имею небольшой опыт в программировании на c# и python, который активно растет с каждым днем. Я считаю, что на топ-IT нужно взять именно меня по причине моей крайней мотивированности в решении повседневных задач людей и компаний.  
+        </p>
+    </section>
+
+    <section class="block">
+        <h2>Обратная связь</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" rows="4" placeholder="Сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+        <div id="formMsg" class="msg-sent" hidden>Спасибо! Я обязательно прочту ваше сообщение.</div>
+    </section>
+
+    <section class="block">
+        <h2>Связаться напрямую</h2>
+        <ul>
+            <li>Telegram: <a href="https://t.me/vobla322  " target="_blank">@vobla322</a></li>
+            <li>Телефон: +7 923 505-84-54</li>
+            <li>Email: ashura_max@mail.ru</li>
+        </ul>
+    </section>
+</div>
+
+<script>
+/* ---------- появление блоков при скролле ---------- */
+const blocks = document.querySelectorAll('.block');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.25 });
+blocks.forEach(block => observer.observe(block));
+
+/* ---------- позиция курсора для «кратера» ---------- */
+blocks.forEach(block => {
+    const rect = block.getBoundingClientRect();
+    const diameter = Math.hypot(rect.width, rect.height);
+    block.style.setProperty('--d', `${diameter}px`);
+
+    block.addEventListener('mousemove', e => {
+        const r = block.getBoundingClientRect();
+        block.style.setProperty('--x', `${e.clientX - r.left}px`);
+        block.style.setProperty('--y', `${e.clientY - r.top}px`);
+    });
+});
+
+/* ---------- обработка формы ---------- */
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(this).entries());
+    console.log('Новое сообщение:', data);
+    this.reset();
+    document.getElementById('formMsg').hidden = false;
+});
+</script>
+</body>
+</html>
